@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(version: 20140512040936) do
 
   create_table "auctions", force: true do |t|
+    t.string   "title"
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
