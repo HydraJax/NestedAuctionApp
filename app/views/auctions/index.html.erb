@@ -1,1 +1,6 @@
-<h1>Welcome to GA-Bay</h1>
+<h1>Useless Auction Site</h1>
+<p>Open Auctions:</p>
+
+<% @auctions.each do |auction| %>
+  <li><%= link_to auction.title, auction_bids_path(auction)%></li>
+<% end %>

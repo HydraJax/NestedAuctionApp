@@ -1,0 +1,7 @@
+<h1>Bid On <%= @auction.title %></h1>
+
+<%= form_for([@auction, @bid]) do |f| %>
+    <%= f.label :amount %><br>
+    <%= f.text_field :amount%>
+    <%= f.submit :class=>"btn btn-success" %>
+<% end %>
